@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800;900&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors */
+  --color-neo-yellow: #ffe600;
+  --color-neo-teal: #00f0ff;
+  --color-neo-pink: #ff66c4;
+  --color-neo-blue: #2563eb;
+  --color-neo-green: #10b981;
+  --color-neo-bg: #fffdf5;
+  --color-neo-card: #ffffff;
+  --color-neo-dark: #000000;
+  --color-neo-gray: #e5e7eb;
+  --color-neo-muted: #6b7280;
+
+  /* Shadow tokens */
+  --shadow-neo-sm: 2px 2px 0px 0px #000000;
+  --shadow-neo: 4px 4px 0px 0px #000000;
+  --shadow-neo-lg: 8px 8px 0px 0px #000000;
+  --shadow-neo-xl: 12px 12px 0px 0px #000000;
+
+  /* Typography */
+  --font-sans: "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-display: "Outfit", system-ui, sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-neo-bg);
+    color: var(--color-neo-dark);
+    font-family: var(--font-sans);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-display);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+}
